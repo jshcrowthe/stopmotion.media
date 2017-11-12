@@ -4,6 +4,8 @@
   "description": "A site to help people create Stopmotion Video",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack-dev-server --config webpack.dev.js --content-base public --watch-content-base",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
@@ -11,5 +13,13 @@
     "email": "jshcrowthe@gmail.com",
     "url": "https://jcrowther.io"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "workbox-webpack-plugin": "^2.1.1"
+  }
 }
