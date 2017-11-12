@@ -1,15 +1,15 @@
 language: node_js
 node_js: stable
-
 cache:
   directories:
-    - node_modules
-    - functions/node_modules
-
+  - node_modules
+  - functions/node_modules
 script:
-  - npm run build
-
+- npm run build
 deploy:
   skip_cleanup: true
   provider: firebase
+  token:
+    secure: oqspp667gmMkf+O+yKiRWg3mQI1eVu7Skiq0rqv3G4gAbBm76ENJlnSQ/hWnVaOZcFuSuwPQFhFz3nN0sOXS114cLXmxfexmn31TKNTM0RXj7m8up5wbT9LlWJhPNSN1VUObOGvArPUk66nLQ/4XK6/7T0o0xFwS+fJ7j9sOORWt05j08RlIr/Lw5taEvMZYyd2N+E4LpDvufYbJToTWo+tsWsZhCBZlLfVwNTvZzs1KV34Sfv2xLmGjDSD+2f7w/WjN1NpBTnbviLXadvGaPOSKT5vK358y524E4Z9H94mmI468qiP5JTfLOc4YhjzXWxVGtG4STHTZyMmGqCG/2Ls6cBv/xnSweJbklh8B9m+CCw66KAU5qAJYefNEtTO1QqlT5XfvDxVHblW8J0bgdJBbFsoyfGEyS4hUaMpXNbbGMQzYJUuOczFq8tB8jccmsBkdvjaJRjorkyt50IqPODQRzEtTUT3vSFE22B2fnvr5bAZRkAD7mFZH1UsM982xghJwixeRNXwT7vxQZS0Zlai4wZ9Aj7wFvvqQM1jrHWON1phHk/s8oizmoWeD2j3tT97UZ+R7Je4C5bIocPUoQnov74j7ov3UKeJd0jp0DNO2vjrnTiRKnZEBh2wm96xj1Ya80NTwnqs79OdZQioNLm5+uHlYHIz52RK2iXG60Cs=
   project: stopmotion-med
+    
