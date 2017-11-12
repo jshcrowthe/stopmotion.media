@@ -1,0 +1,15 @@
+{
+  "name": "stopmotion.media",
+  "version": "1.0.0",
+  "description": "A site to help people create Stopmotion Video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Josh Crowther",
+    "email": "jshcrowthe@gmail.com",
+    "url": "https://jcrowther.io"
+  },
+  "license": "MIT"
+}
