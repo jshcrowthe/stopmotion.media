@@ -28,7 +28,11 @@ module.exports = {
         loader: 'babel-loader',
 
         options: {
-          presets: ['es2015'],
+          presets: [['env', {
+            targets: {
+              browsers: ['ie >= 11']
+            }
+          }]],
           plugins: ['syntax-dynamic-import']
         }
       }
